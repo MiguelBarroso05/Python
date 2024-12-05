@@ -1,5 +1,3 @@
-  Python Lessons Backup
-
 Python Lessons Backup
 =====================
 
