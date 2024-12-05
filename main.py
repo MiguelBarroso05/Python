@@ -1,0 +1,1 @@
+input("fdgdghdf\n")
