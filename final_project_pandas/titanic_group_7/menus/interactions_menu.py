@@ -16,10 +16,10 @@ def press_any_key_with_animation():
     """
     stop_animation = [False] 
     boat_frames = [
-        "  ~    ~    ~    ~    🚤   ~    ~    ~    ~",
-        "    ~    ~    ~    ~   🚤   ~    ~    ~    ~",
-        "      ~    ~    ~    ~ 🚤   ~    ~    ~    ~",
-        "    ~    ~    ~    ~   🚤   ~    ~    ~    ~",
+        "  ~    ~    ~    ~    🚤  ~    ~    ~    ~",
+        "    ~    ~    ~    ~   🚤  ~    ~    ~    ~",
+        " ~    ~    ~    ~    ~ 🚤   ~    ~    ~    ~",
+        "    ~    ~    ~    ~   🚤  ~    ~    ~    ~",
     ]
 
     def boat_animation():
@@ -50,3 +50,4 @@ def press_any_key_with_animation():
         stop_animation[0] = True  # Sinaliza para parar a animação
         animation_thread.join()  # Garante que a thread termina
         print("\033[F\033[K" * 2, end="")  # Limpa as linhas finais após parar
+        

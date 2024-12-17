@@ -1,4 +1,5 @@
 from menus.data_import_menu import data_import_menu
+from menus.data_export_menu import data_export_menu
 from menus.data_processing_menu import data_processing_menu
 from menus.data_visualization_menu import data_visualization_menu
 from menus.interactions_menu import clean, press_any_key_with_animation
@@ -18,7 +19,8 @@ def main_menu():
         print("1. Data Processing")
         print("2. Data Visualization")
         print("3. Import CSV")
-        print("4. Exit")
+        print("4. Export CSV")
+        print("5. Exit")
         
         try:
             choice = input("Choose an option: ")
@@ -29,6 +31,8 @@ def main_menu():
             elif choice == "3":
                 data_import_menu(db_path)
             elif choice == "4":
+                data_export_menu(db_path)
+            elif choice == "5":
                 print("Exiting the application. Goodbye!")
                 break
             else:
